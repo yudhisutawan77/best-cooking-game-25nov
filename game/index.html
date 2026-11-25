@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warung Hantu — Dapur Pasar Malam</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #1d110a;
+    min-height: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  #wrap {
+    width: min(1280px, 100%);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    background: #3b2a20;
+  }
+  #help {
+    color: #d7ccc8;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  #help b { color: #ffd54a; }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="help">
+      <b>Warung Hantu — Dapur Pasar Malam.</b>
+      Masak untuk hantu-hantu lapar: ambil bahan, cincang di talenan, masak di wajan,
+      tata di piring, sajikan di jendela.
+      Setiap hantu membisikkan satu bahan rahasia — sajikan dengan bahan itu untuk bonus ganda!
+      <br>WASD / panah: jalan &nbsp;•&nbsp; E / klik: pakai stasiun &nbsp;•&nbsp; R: ulangi &nbsp;•&nbsp; M: bisu
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
